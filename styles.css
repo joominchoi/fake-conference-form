@@ -21,7 +21,7 @@ body {
   background-color: #F6F7F8;
   border: 1px solid #D6D9DC;
   border-radius: 3px;
-  
+
   width: 80%;
   margin: 40px 0;
   padding: 50px;
@@ -64,7 +64,8 @@ body {
 .form-row input[type='email']:invalid {
   border: 1px solid #D55C5F;
   color: #D55C5F;
-  box-shadow: none; /* Remove default red glow in Firefox */
+  box-shadow: none;
+  /* Remove default red glow in Firefox */
 }
 
 .form-row select {
@@ -101,6 +102,28 @@ body {
   margin-bottom: 30px;
 }
 
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #FFFFFF;
+  background-color: #5995DA;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #76AEED;
+}
+
+.form-row button:active {
+  background-color: #407FC7;
+}
+
 .legacy-form-row {
   border: none;
   margin-bottom: 40px;
@@ -119,22 +142,26 @@ body {
 .legacy-form-row input[type='radio'] {
   margin-top: 2px;
 }
-  
+
 .legacy-form-row .radio-label,
 .legacy-form-row input[type='radio'] {
   float: left;
 }
 
 @media only screen and (min-width: 700px) {
+
   .speaker-form-header,
   .speaker-form {
     width: 600px;
   }
+
   .form-row {
     flex-direction: row;
-    align-items: flex-start; /* To avoid stretching */
+    align-items: flex-start;
+    /* To avoid stretching */
     margin-bottom: 20px;
   }
+
   .form-row input[type='text'],
   .form-row input[type='email'],
   .form-row select,
@@ -142,6 +169,7 @@ body {
     width: 250px;
     height: initial;
   }
+
   .form-row label {
     text-align: right;
     width: 120px;
@@ -158,14 +186,20 @@ body {
     margin-left: 120px;
   }
 
+  .form-row button {
+    margin-left: 120px;
+  }
+
   .legacy-form-row {
     margin-bottom: 10px;
   }
+
   .legacy-form-row legend {
     width: 120px;
     text-align: right;
     padding-right: 20px;
   }
+
   .legacy-form-row legend {
     float: left;
   }
